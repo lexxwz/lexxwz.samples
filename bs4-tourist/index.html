@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 и CSS3 Advanced - микроданные, геолокация. Задание 2.</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/jpg">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hw2.css">
+</head>
+<body>
+    <header class="container bg-success py-2">
+        <p class="text-center h2">Туристическая фирма "Во все тяжкие"</p>
+    </header>
+    <nav class=" container navbar bg-success">
+        <ul class="navbar-nav flex-row mx-auto">
+            <li class="nav-item btn btn-outline-dark btn-sm px-3 mx-2"><a class="nav-link text-dark" href="#">ГЛАВНАЯ</a></li>
+            <li class="nav-item btn btn-outline-dark btn-sm px-3 mx-2"><a class="nav-link text-dark text-lg" href="#">ЦЕНЫ</a></li>
+            <li class="nav-item btn btn-outline-dark btn-sm px-3 mx-2"><a class="nav-link text-dark" href="#">КОНТАКТЫ</a></li>
+            <li class="nav-item btn btn-outline-dark btn-sm px-3 mx-2"><a class="nav-link text-dark" href="#">FAQ</a></li>
+            <li class="nav-item btn btn-outline-dark btn-sm px-3 mx-2"><a class="nav-link text-dark" href="#">О НАС</a></li>
+        </ul>
+    </nav>
+    <section class="container border border-success">
+        <div class="row">
+            <div class="col" id="out">
+                <iframe class="col fixed-top map" id="map" src="https://www.google.com/maps/" width="800" height="600" frameborder="0" allowfullscreen=""></iframe>
+                <div class="fixed-top close border border-dark bg-light btn badge-pill d-flex" id="close">&times;</div>
+            </div>
+        </div>
+        <div class="row my-2 justify-content-around">
+            <div class="col-5 col-md-3 p-2 m-2 border border-success">
+                <div class="card text-center border-success">
+                    <div class="card-header bg-success py-0">
+                        <p class="text-center h4">Отель<br />Менора</p>
+                    </div>
+                    <a href="https://www.booking.com/hotel/ua/menorah.ru.html?aid=806016;label=dnipropetrovs-k-O6dwtK2VjV551TH3MLLXmQS79493151982%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-285284110726%3Akwd-122643884422%3Alp1012839%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AiihGXvH6AK4;sid=3e65c7defda77a7c0bee68639706df42;dest_id=-1037865;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1581074179;srpvid=4c974f41fef70019;type=total;ucfs=1&#hotelTmpl"><img src="images/menora.jpg" class="img-fluid" alt="Отель №1"></a>
+                    <div class="footer">
+                        <p class="">Этот дизайн-отель расположен в городе Днепр, в 6 минутах ходьбы от бизнес-центра «МОСТ-сити».</p>
+                        <input type="button" class="btn btn-success col text-center rounded-0 text-dark" value="Посмотреть на карте" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4281.320325803084!2d35.05223915396237!3d48.46362643808721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2dcc707d44f%3A0x7fc8f5e0c5f7e6dd!2sMenorah%20Hotel!5e0!3m2!1sru!2sua!4v1581085933995!5m2!1sru!2sua"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 col-md-3 p-2 m-2 border border-success">
+                <div class="card text-center border-success">
+                    <div class="card-header bg-success py-0">
+                        <p class="text-center h4">Отель<br />Бартоломео</p>
+                    </div>
+                    <a href="https://www.booking.com/hotel/ua/bartolomeo.ru.html?aid=806016;label=dnipropetrovs-k-O6dwtK2VjV551TH3MLLXmQS79493151982%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-285284110726%3Akwd-122643884422%3Alp1012839%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AiihGXvH6AK4;sid=3e65c7defda77a7c0bee68639706df42;dest_id=-1037865;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=7;hpos=7;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1581074179;srpvid=4c974f41fef70019;type=total;ucfs=1&#hotelTmpl"><img src="images/bartolomeo.jpg" class="img-fluid" alt="Отель №2"></a>
+                    <div class="footer">
+                        <p class="">Курортный отель «Бартоломео Бест Ривер» расположен в Днепропетровске прямо на берегу реки Днепр. </p>
+                        <input type="button" class="btn btn-success col text-center rounded-0 text-dark" value="Посмотреть на карте" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.472224122681!2d35.07827821600721!3d48.44746837924931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfd28f4edc979%3A0xe1cc984fb14d7a45!2z0JHQsNGA0YLQvtC70L7QvNC10L4!5e0!3m2!1sru!2sua!4v1581253506073!5m2!1sru!2sua"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 col-md-3 p-2 m-2 border border-success">
+                <div class="card text-center border-success">
+                    <div class="card-header bg-success py-0">
+                        <p class="text-center h4">Отель<br />Астория</p>
+                    </div>
+                    <a href="https://www.booking.com/hotel/ua/astoria.ru.html?aid=806016;label=dnipropetrovs-k-O6dwtK2VjV551TH3MLLXmQS79493151982%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-285284110726%3Akwd-122643884422%3Alp1012839%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AiihGXvH6AK4;sid=3e65c7defda77a7c0bee68639706df42;dest_id=-1037865;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=25;hpos=25;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1581074179;srpvid=4c974f41fef70019;type=total;ucfs=1&#hotelTmpl"><img src="images/astoria.jpg" class="img-fluid" alt="Отель №3"></a>
+                    <div class="footer">
+                        <p class="">«Астория» расположена в культурном центре города Днепр, всего в 100 метрах от Государственной оперы.</p>
+                        <input type="button" class="btn btn-success col text-center rounded-0 text-dark" value="Посмотреть на карте" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.3869617649643!2d35.03787381600783!3d48.468290779251134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2e5eb9555df%3A0xdabd97bde9c593e3!2z0JDRgdGC0L7RgNC40Y8!5e0!3m2!1sru!2sua!4v1581253695006!5m2!1sru!2sua"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 col-md-3 p-2 m-2 border border-success">
+                <div class="card text-center border-success">
+                    <div class="card-header bg-success py-0">
+                        <p class="text-center h4">Отель<br />Хутор</p>
+                    </div>
+                    <a href="https://www.booking.com/hotel/ua/hutor.ru.html?aid=806016;label=dnipropetrovs-k-O6dwtK2VjV551TH3MLLXmQS79493151982%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-285284110726%3Akwd-122643884422%3Alp1012839%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AiihGXvH6AK4;sid=3e65c7defda77a7c0bee68639706df42;dest_id=-1037865;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=24;hpos=24;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1581074389;srpvid=8b054faaffce0140;type=total;ucfs=1&#hotelTmpl"><img src="images/hutor.jpg" class="img-fluid" alt="Отель №4"></a>
+                    <div class="footer">
+                        <p class="">Отель «Хутор» расположен на берегу Днепра в одноименном городе, в 2 км от худ. галереи Е. Гапчинской.</p>
+                        <input type="button" class="btn btn-success col text-center rounded-0 text-dark" value="Посмотреть на карте" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.6986620569824!2d35.07200621600713!3d48.44312297924893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfcd7063bf1cf%3A0x20eb5ac0bc75e1c8!2z0KXRg9GC0L7RgA!5e0!3m2!1sru!2sua!4v1581253744757!5m2!1sru!2sua"></input>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container bg-success">
+        <p class="text-center">Все права защищены</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/hw2.js"></script>
+</body>
+</html>

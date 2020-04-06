@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Youtube Video</title>
+    <link rel="shortcut icon" href="img/DLW_184.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/yt.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="js/yt.js"></script>
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h4 class="modal-title">Аутентификация</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form class="text-center needs-validation" novalidate>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label for="login" class="input-group-prepend">
+                                    <span class="input-group-text">Login</span>
+                                </label>
+                                <input type="text" class="form-control" id="login" placeholder="admin" required>
+                                <div class="valid-tooltip">Правильно</div>
+                                <div class="invalid-tooltip">Ошибка</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label for="password" class="input-group-prepend">
+                                    <span class="input-group-text">Password</span>
+                                </label>
+                                <input type="password" class="form-control" id="password" placeholder="qwerty" required>
+                                <div class="valid-tooltip">Правильно</div>
+                                <div class="invalid-tooltip">Ошибка</div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn badge-pill btn-danger col-4" id="sub">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="container" id="control">
+        <div class="row" id="header">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <div>
+                        <a href="https://www.youtube.com/"><img src="img/og_og_1504029308295528474.jpg" alt="Youtube logo" class="img-fluid" id="logo"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <div class="navbar-nav ml-auto">
+                            <div class="nav-item">
+                                <input type="button" value="<" class="btn mr-1 btn-outline-dark rounded button">
+                            </div>
+                            <div class="nav-item">
+                                <div id=page class="align-self-center mr-1 mt-2"></div>
+                            </div>
+                            <div class="nav-item">
+                                <input type="button" value=">" class="btn mr-3 btn-outline-dark rounded button">
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-8 offset-2 pb-3">
+                <div id="carouselMy" class="carousel my-carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" id="verte">
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselMy" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					</a>
+					<a class="carousel-control-next" href="#carouselMy" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					</a>
+					<ol class="carousel-indicators">
+						<li data-target="#carouselMy" data-slide-to="0" class="active carI"></li>
+						<li data-target="#carouselMy" data-slide-to="" class="carI"></li>
+						<li data-target="#carouselMy" data-slide-to="" class="carI"></li>
+					</ol>
+                </div>
+            </div>
+        </div>
+        <div id="out" class="row"></div>
+    </main>
+    <footer class="container">
+        <div class="row">
+            <div class="col pt-2">
+                <div class=" justify-content-center input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Подписаться</div>
+                    </div>
+                    <input type="text" class="form-control col-2 mr-2" placeholder="Ваш e-mail">
+                    <button type="submit" class="btn btn-outline-dark rounded">Подписаться</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/valid.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>

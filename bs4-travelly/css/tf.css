@@ -1,0 +1,27 @@
+body{
+  min-width: 500px;
+}
+p{
+  margin: 0px;
+  font-size: 10px;
+}
+.text10{
+  font-size: 10px;
+}
+.card-body, .card-header{
+  padding: 10px;
+  padding-top: 0px;
+}
+.price{
+  position: relative;
+  top: -20px;
+}
+.card-body{
+  height: 90px;
+}
+.colTop{
+  line-height: 10px;
+}
+.bot{
+  padding-bottom: 80px;
+}

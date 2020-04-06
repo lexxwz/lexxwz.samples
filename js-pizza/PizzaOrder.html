@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Pizza Store Order</title>
+    <link rel="shortcut icon" href="img/DLW_184.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/pizza.css">
+    <script src="js/pizza.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Nanum+Pen+Script" rel="stylesheet">
+</head>
+<body>
+    <div id="opacity">
+        <nav>
+            <a href="PizzaHome.html">Home</a>
+            <a href="PizzaMenu.html">Menu</a>
+            <a href="#">Order</a>
+            <a href="PizzaAboutUs.html">About us</a>
+        </nav>
+        <main>
+            <form action="#" method="get" class="order">
+                <p id = "alert"></p>
+                <div class="order">
+                    <p class="order">Choose pizza</p>
+                    <select name="choose" id="choose" required>
+                        <option value="null" selected disabled>Choose..</option>
+                        <option value="Peperoni">Peperoni</option>
+                        <option value="Julienne">Julienne</option>
+                        <option value="Prosciutto">Prosciutto</option>
+                        <option value="Hawaiian">Hawaiian</option>
+                    </select>
+                    <p class="order">Add topping</p>
+                    <input type="checkbox" name="moz" id="moz"><label for="moz">Mozzarella (+10 UAH)</label><br />
+                    <input type="checkbox" name="mush" id="mush"><label for="mush">Mushrooms (+5 UAH)</label><br />
+                    <input type="checkbox" name="ham" id="ham"><label for="ham">Ham (+10 UAH)</label><br />
+                    <input type="checkbox" name="pep" id="pep"><label for="pep">Pepperoni (+10 UAH)</label><br />
+                    <input type="checkbox" name="saus" id="saus"><label for="saus">Sausage (+10 UAH)</label><br />
+                    <input type="checkbox" name="bac" id="bac"><label for="bac">Bacon (+10 UAH)</label><br />
+                    <input type="checkbox" name="bl" id="bl"><label for="bl">Black olives (+5 UAH)</label><br />
+                    <input type="checkbox" name="gr" id="gr"><label for="gr">Green peppers (+5 UAH)</label><br />
+                </div>
+                <div class="order">
+                    <p class="order">Choose the size</p>
+                    <input type="radio" name="size" id="small" value="small" checked><label>Small</label>
+                    <input type="radio" name="size" id="medium" value="medium"><label>Medium</label>
+                    <input type="radio" name="size" id="big" value="big"><label>Big</label>
+                    <p class="order">Quantity</p>
+                    <select name="number" id="number">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br />
+                    <label for="name">Name</label><br />
+                    <input type="text" name="name" placeholder="Name" id="name" required><br />
+                    <label for="phone">Phone</label><br />
+                    <input type="text" name="phone" placeholder="+000000000000" id="phone" required><br />
+                    <label for="address">Address</label><br />
+                    <input type="text" name="address" placeholder="Delivery address" id="address"><br />
+                    <p id="price">Price ...</p>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

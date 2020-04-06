@@ -1,0 +1,123 @@
+.flex{
+    display: flex;
+}
+header{
+    /* justify-content: stretch; */
+    align-items: center;
+    background-image: url(../img/img02_1.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160px;
+    border-bottom: 10px solid black;
+}
+
+header .flex{
+    align-items: center;
+    flex-grow: 1;
+    padding: 5px 0px;
+    align-self: flex-end;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+.flex p{
+    flex-grow: 1;
+}
+.brown{
+    color: brown;
+}
+.flex button{
+    min-width: 80px;
+    height: 20px;
+    margin: 0px 10px;
+    flex-grow: 0;
+    color: white;
+    background-color: brown;
+    border: none;
+}
+article{
+    flex-grow: 2;
+    margin-right: 10px;
+}
+h3{
+    margin-bottom: 0px;
+}
+p{
+    margin: 0px;
+}
+article div{
+    margin-top: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+article div img{
+    flex-grow: 0;
+    min-width: 200px;
+    margin-right: 10px;
+}
+article div p{
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+.arEnd{
+    background-color: brown;
+    color: white;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+}
+.arEnd div{
+    margin: 0px 10px;
+}
+.arEnd a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+aside{
+    background-color: rgb(238, 215, 184);
+    min-width: 33%;
+    flex-grow: 1;
+    font-size: small;
+}
+aside>h3, aside nav{
+    padding-left: 10px;
+}
+aside div.flex{
+    flex-wrap: wrap;
+}
+aside div.flex div{
+    padding: 10px;
+    flex-basis: 120px;
+}
+aside a{
+    color: brown;
+    text-decoration: none;
+}
+aside label{
+    font-weight: bold;
+}
+aside input{
+    border: none;
+    width: 100px;
+}
+aside nav{
+    line-height: 20px;
+}
+aside div.flex button{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 15px;
+}
+aside div.flex div:nth-child(2){
+    margin-top: 12px;
+}
+.mark{
+    display: inline-block;
+    scale: 50%;
+    margin-left: -2px;
+}
+.mark2{
+    margin-right: 6px;
+}
