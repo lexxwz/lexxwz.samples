@@ -38,7 +38,7 @@ main {
         text-align: center; }
       main nav div {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(130px, 25%)); } }
+        grid-template-columns: repeat(auto-fit, minmax(110px, 20%)); } }
     @media (min-width: 1100px) {
       main nav {
         text-align: left; }
