@@ -3,10 +3,10 @@ body{
     background-color:rgb(100, 150, 160);
     font-family: 'Nanum Pen Script', cursive;
     font-size: 30px;
-    width: 1100px;
+    width: 1000px;
     padding: 0px;
     margin: 0px auto;
-    background-size: 1100px;
+    background-size: 1000px;
     height: 100vh;
     background-repeat: repeat-y;
     background-attachment: fixed;
@@ -14,7 +14,7 @@ body{
 }
 #opacity{
     background-color: rgb(255, 255, 255, 0.8);
-    width: 1100px;
+    width: 1000px;
     height: 100vh;
 }
 main, nav{
@@ -65,7 +65,7 @@ a:hover{
     color: rgb(100, 150, 160);
 }
 div.menu img{
-    width: 240px;
+    width: 40%;
 }
 div.menu, div.menu img, p.menu{
     float: left;
@@ -76,8 +76,9 @@ div.menu{
     width: 50%;
 }
 p.menu{
-    width: 220px;
+    width: 60%;
     font-size: 20px;
+    box-sizing: border-box;
     padding-left: 20px;
 }
 div#d3{
