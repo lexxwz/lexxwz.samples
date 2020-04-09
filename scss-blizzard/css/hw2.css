@@ -76,7 +76,8 @@ main {
       border-radius: 10px; }
     main article a {
       text-decoration: none;
-      text-align: right; }
+      text-align: right;
+      color: white;  }
       main article a:visited {
         color: white; }
   main aside {
